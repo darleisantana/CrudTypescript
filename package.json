@@ -1,0 +1,19 @@
+{
+  "name": "codechallenge",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de um teste para MEEGU\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bCRUD como teste para empresa MEEGU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "start": "node index.js"
+  },
+  "author": "Darlei Santos Santana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
