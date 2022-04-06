@@ -14,17 +14,17 @@ server.get('/:index', (req, res) => {
 
 //Criar alguma informação no back-end
 server.post('/', (req, res) => {
-    const { id }: Number = id++;
-    const { name }: String = req.body;
-    const { birthdate }: Date = req.body;
-    const { document }: String = req.body;
-    const { acceptedTerms }: Boolean = req.body;
-    const { zipCode }: String = req.body;
-    const { street }: String = req.body;
-    const { neighborhood }: String = req.body;
-    const { city }: String = req.body;
-    const { state }: String = req.body;
-    const { createdAt }: Date = Date();
+    const { id } = id++;
+    const { name } = req.body;
+    const { birthdate } = req.body;
+    const { document } = req.body;
+    const { acceptedTerms } = req.body;
+    const { zipCode } = req.body;
+    const { street } = req.body;
+    const { neighborhood } = req.body;
+    const { city } = req.body;
+    const { state } = req.body;
+    const { createdAt } = Date();
     const { updatedAt } = null;
     
     dice.push(name);
@@ -44,19 +44,19 @@ server.post('/', (req, res) => {
 
 //Editar alguma informação no back-end
 server.put('/:index', (req, res) => {
-    const { id } = req.post;
+    const { index } = req.post;
     const { name } = req.body;
 
-    dice[id] = name;
+    dice[index] = name;
 
     return res.json(dice);
 })
 
 //Deletar alguma informação no back-end
 server.delete('/:index', (req, res) => {
-    const { id } = req.params;
+    const { index } = req.params;
 
-    dice.splice(id, 1);
+    dice.splice(index, 1);
 
     return res.send();
 });
